@@ -1,0 +1,344 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Dancing Script';
+  color: white;
+  text-align: center;
+}
+
+.contenedor {
+  width: 900px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+
+.contenedorP {
+  width: 900px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+/*header*/
+
+header {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.pie {
+ /* width: 100%;
+  height: 60%;*/
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  /*text-align: center;*/
+  color: black;
+  background-color: #C6d5c5;
+   border-radius: 0 0 10px 10px;
+  }
+
+/*Menu del header*/
+
+header a, header a:visited {
+  color: white;
+}
+
+.titulo, .menu {
+  margin: auto;
+}
+
+.seleccion {
+  text-decoration: none;
+}
+
+
+/*section 1*/
+
+.uno {
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+.imagen1 {
+  width: 50%;
+  height: 40%;
+  box-shadow: 2px 2px 2px black;
+}
+
+
+.imagen3 {
+  width: 100%;
+  height: 80%;
+ box-shadow: 2px 2px 2px black;
+
+}
+
+.imagen3:hover {
+  -moz-transform:translate(20px,-5px);/*Comenzamos a aplicar el valor rotate de la transormacion*/
+  -webkit-transform:translate(20px,-5px);
+  -o-transform:translate(20px,-5px);
+  -ms-transform:translate(20px,-5px);
+  transform:translate(20px,-5px);
+}
+
+
+/*section 2*/
+
+.dos {
+  background-color: #d5c75f;
+}
+
+.dosP {
+  background-color: #d5c75f;
+  align-items: center;
+}
+
+.imagen2 {
+  width: 100%;
+  height: 80%;
+  box-shadow: 2px 2px 2px black;
+
+    -moz-transition: all 3s ease;/*Definimos las transiciones, deben durar 3 segundos*/
+    -ms-transition: all 3s ease;/*Definimos las transiciones, deben durar 3 segundos*/
+    -o-transition: all 3s ease;/*Definimos las transiciones, deben durar 3 segundos*/
+    -webkit-transition: all 3s ease;/*Definimos las transiciones, deben durar 3 segundos*/
+    transition: all 3s ease;/*Definimos las transiciones, deben durar 3 segundos*/
+    cursor:pointer;/*El cursor adopta forma de mano normalmente, al situarse encima de la imagen*/
+    box-shadow: 0 0 10px #f00;/*Definimos la sombra. En este caso, es de color rojo y se difumina 10pixeles*/
+   -webkit-box-shadow: 0 0 10px #f00;
+   -moz-box-shadow: 0 0 10px #f00;
+
+}
+
+.imagen2:hover {
+/*margin-left: 200px;Separamos la imagen un poco de la izquierda al mismo tiempo que gira*/
+-moz-transform:rotate(10deg);/*Comenzamos a aplicar el valor rotate de la transormacion*/
+-webkit-transform:rotate(10deg);
+-o-transform:rotate(10deg);
+-ms-transform:rotate(10deg);
+transform:rotate(10deg);
+            box-shadow: 0 0 15px #0026ff;/*Sombra difuminada 15 pixeles de color azul*/
+   -webkit-box-shadow: 0 0 15px #0026ff;
+   -moz-box-shadow: 0 0 15px #0026ff;
+
+}
+
+.imagen2 {
+  width: 100%;
+  height: 80%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.col1,.col2{
+	margin: auto;
+	width: 45%;
+	height: 50%;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: black;
+  padding: 50px 0 40px 0;
+}
+
+.col1P,.col2P,.col3P,.col4P {
+  margin: auto;
+  width: 25%;
+  height: 20%;
+}
+
+
+.col1Pie,.col2Pie,.col3Pie,.col4Pie {
+  margin: auto;
+  width: 25%;
+  height: 20%;
+}
+
+.contenedor1P {
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: black;
+  padding: 50px 0 40px 0;
+}
+.contenedor2P {
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: black;
+  padding: 50px 0 40px 0;
+}
+
+/*.encabezadox{
+  display: flex;
+  flex-direction: row;
+
+}
+*/
+
+
+.imagen1p, .imagen2p, .imagen3p, .imagen4p, .imagen5p, .imagen6p  {
+  width: 95%;
+  height: 100%;
+  box-shadow: 2px 2px 2px black;
+   }
+
+
+.imagen1p {
+  -webkit-filter: blur(10px);
+  filter: blur(3px);
+}
+
+.imagen2p {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+
+.imagen3p {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.imagen4p {
+  -webkit-filter: hue-rotate(45deg);
+  filter: hue-rotate(45deg);
+}
+
+.imagen5p {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+ .imagen6p {
+  -webkit-filter: contrast(200%);
+  filter: contrast(200%);
+}
+
+/*media queries*/
+
+/*Para Celulares:*/
+@media (max-width:900px){
+
+
+     header{
+     height: 120px !important;
+     display: flex;
+     flex-direction: column;
+     }
+    
+    .menu, .titulo {
+     display: flex;
+     flex-direction: column;      
+    }
+
+   .contenedor {
+     width: 900px;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .uno {
+    padding-top: 40px;
+    width: 900px;
+      }
+
+    .imagen1{
+     width: 35%;
+     height: 35%;
+    }
+ 
+    .imagen2{
+      width: 90%;
+      height: 70%;
+    }
+
+    .imagen3{
+      width: 90%;
+      height: 70%;
+    }
+
+
+  .contenedor2 {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+      }
+
+   .dos {
+     width: 900px;
+     height: 600px;
+   }
+
+   .col1P, .col2P, .col3P {
+    padding-top: 10px;
+    width: 500px;
+      }
+
+  .col4P, .col5P, .col6P  {
+    padding-top: 10px;
+    width: 500px;
+      }
+ 
+    
+.contenedor1P {
+     width: 900px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+
+.contenedor2P {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+    
+.pie {
+ /* width: 100%;
+  height: 100px;*/
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  /*text-align: center;*/
+  color: black;
+  }
+   
+
+  .col1Pie,.col2Pie,.col3Pie,.col4Pie {
+        margin: auto;
+        width: 25%;
+        height: 17%;
+      }
+
+.imagen1p, .imagen2p, .imagen3p, .imagen4p, .imagen5p, .imagen6p  {
+  width: 65%;
+  height: 100%;
+  box-shadow: 2px 2px 2px black;
+}
+
+
+
+   }
+
+
+  }
+
+
+/*@media (max-width:600px) {
+  .contenedor2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+*/
